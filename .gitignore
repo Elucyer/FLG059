@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build output
+dist/
+
+# Drizzle migrations output
+drizzle/
+
+# Plantilla descifrada (se regenera con scripts/decrypt_template.py)
+public/template_FGL059.xlsx
+public/template_FGL059.xlsm
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
