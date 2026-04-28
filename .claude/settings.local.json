@@ -26,7 +26,9 @@
       "Bash(node -e \":*)",
       "Bash(python -c \"import openpyxl; print\\(''openpyxl'', openpyxl.__version__\\)\")",
       "Bash(python -c \"import xlwings; print\\(''xlwings'', xlwings.__version__\\)\")",
-      "Bash(python \"c:/Users/Usuario/Documents/Proyectos/Universidad/TermiGrome/scripts/decrypt_template.py\")"
+      "Bash(python \"c:/Users/Usuario/Documents/Proyectos/Universidad/TermiGrome/scripts/decrypt_template.py\")",
+      "Bash(python -c ':*)",
+      "Bash(grep -v \"^$\")"
     ]
   }
 }
