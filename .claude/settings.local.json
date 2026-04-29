@@ -28,7 +28,9 @@
       "Bash(python -c \"import xlwings; print\\(''xlwings'', xlwings.__version__\\)\")",
       "Bash(python \"c:/Users/Usuario/Documents/Proyectos/Universidad/TermiGrome/scripts/decrypt_template.py\")",
       "Bash(python -c ':*)",
-      "Bash(grep -v \"^$\")"
+      "Bash(grep -v \"^$\")",
+      "PowerShell(& \"C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\\\\Packages\\\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\\\LocalCache\\\\local-packages\\\\Python311\\\\Scripts\\\\pyinstaller.exe\" --onefile \"C:\\\\Users\\\\Usuario\\\\Documents\\\\Proyectos\\\\Universidad\\\\TermiGrome\\\\scripts\\\\termigrome_export.py\")",
+      "Bash(python3 -m PyInstaller termigrome_export.spec --distpath dist)"
     ]
   }
 }

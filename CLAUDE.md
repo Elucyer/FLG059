@@ -32,6 +32,17 @@ No test suite exists in this project.
 - **Batch inserts:** Readings are inserted in batches of 500 rows to avoid query size limits.
 - **SSL:** DB connection disables `rejectUnauthorized` and strips `sslmode` from the connection string for AWS RDS compatibility.
 
+### API Routes
+
+| Method | Route | Purpose |
+|--------|-------|---------|
+| POST | `/api/auth/login` | Set `termigrome_session` cookie |
+| POST | `/api/auth/logout` | Clear cookie |
+| POST | `/api/upload` | Parse `.txt`, insert archivos + lecturas |
+| GET | `/api/archivos` | List all uploaded files (desc order) |
+| DELETE | `/api/archivos?id=<id>` | Delete file and all its lecturas (cascade manual) |
+| GET | `/api/export?archivoId=<id>` | Generate and stream the `.xlsm` report |
+
 ### DB Schema (Drizzle, `lib/schema.ts`)
 
 - `archivos` — one row per uploaded file (device ID, date range, sample rate, unit, notes)
